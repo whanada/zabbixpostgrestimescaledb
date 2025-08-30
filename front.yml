@@ -1,7 +1,7 @@
 services:
   front:
     image: zabbix/zabbix-web-nginx-pgsql:7.0.17-ol
-    hostname: <HOSTNAME>
+    hostname: zabbixfront
     deploy:
       resources:
         limits:
@@ -19,7 +19,7 @@ services:
       POSTGRES_USER: <DB_USER>
       POSTGRES_PASSWORD: <DB_PASSWORD>
       POSTGRES_DB: zabbix
-      ZBX_SERVER_NAME: <ZABBIXNAME>
+      ZBX_SERVER_NAME: zabbix
     logging:
       driver: "json-file"
       options:
