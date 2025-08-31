@@ -2,7 +2,9 @@
 #criar .env posteriormente
 
 <DB_USER> - Usuario do banco
+
 <DB_PASSWORD> - Senha do usuario do banco
+
 <NETWORK> - rede criada no Docker
 
 #Inicie por deploy do banco
